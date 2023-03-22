@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Parallax Website Demo</title>
+ <style>
+    body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014__340.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+ </style>
+</head>
+<body>
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        Parallax Website
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <h2>Section One</h2>
+    <p>
+      Nature is the ultimate source of our living. Both living and non-living things include nature, and everyone is interdependent, which helps maintain the ecosystem. Plants, animals, and humans all depend on nature for their survival. It supplies oxygen, sunlight, soil, water, and other necessary components.
+    </p>
+  </section>
+
+  <div class="pimg2">
+    <div class="ptext">
+      <span class="border trans">
+        Image Two Text
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Section Two</h2>
+    <p>
+      The sky changes from minute to minute. From orange yellow to flamboyant pink, the clouds painted with changing colours as the sun goes down. The golden disc is already touching the surface of the ocean. It seems in a hurry to disappear, slipping quickly behind the line of the horizon spreading its last rays.
+    </p>
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext">
+      <span class="border trans">
+        Image Three Text
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Section Three</h2>
+    <p>
+What is the importance of flowers in nature? Besides adding color, texture and biodiversity to gardens and ecosystems, flowers are botanically important structures and essential sources of food for many organisms. The flower is an important means of attracting pollinators to a plant, which is necessary in order for the plant to produce seeds, reproductive structures that allow a species to exist generation after generation. Flowers also protect seeds as they develop, ensuring the successful transfer of genetic material to the next generation. Plants that make flowers are called angiosperms, and they are a group that has evolved to encompass a wide range of diversity in size, form and color.
+    </p>
+  </section>
+
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        Traversy Media
+      </span>
+    </div>
+  </div>
+</body>
+</html>
